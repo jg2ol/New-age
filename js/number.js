@@ -20,3 +20,19 @@ var n2 = Number(console.log("Digite outro número:")) // Verificação p/ number
 
 var soma = Number.parseFloat(n1) + n2
 console.log(`A soma entre ${n1} e ${n2} vale ${soma}`)
+
+// formatação de numbers
+// as formatações p/ strings também funcionando aqui
+console.log(`O número ${soma} com duas casas decimais fica ${soma.toFixed(2)}`)
+
+/* Operadores
+--> os aritméticos são iguais aos do Python
+
+com exceção de:
+n1 = 2 --> Atribuição
+n1 == 2 --> Verifica se n1 tem 'módulo' 2; não verifica tipagem
+n1 === 2 --> Verifica se typeof(n) == Number e se tem 'módulo' 2
+
+Operadores ternários in 'bool.js'
+*/
+
