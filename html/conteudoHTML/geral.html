@@ -32,12 +32,42 @@
             <!-- <video>: análogo à <audio> possui os mesmos atributos e até mais, como o poster que adiciona a thumb -->
             <video src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" controls poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" width="300"></video>
         </section>
+
         <section>
             <!-- <iframe>: o frame imbutido pode incorporar qualquer página html ao site inclusive, vídeos, mapas, ... -->
             <h2>Iframe</h2>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/PkZNo7MFNFg?si=-UBVIUNM3csdeiWF" title="Learn JavaScript - Full Course for Beginners (YouTube video)" allowfullscreen></iframe>
             <iframe width="300" height="200" src="geral.html"></iframe>
         </section>
+
+        <section>
+            <h2>HTML Semântico</h2>
+            <h3>Utilização de elementos com intenções explícitas.</h3>
+            <!-- <blockquote>: citação indentada; [cite] -> URL para busca nos bastidores de pesquisa -->
+            <blockquote cite="geral.html">Imagine uma imagem carregando um texto e um parágrafo carregando um texto, decida qual é melhor.</blockquote>
+            <!-- <cite>: citação explícita da fonte -->
+            <p>-joso_leirbag - <cite>geral.html</cite></p>
+            <!-- <ol>: ordered list -->
+            <!-- <ul>: unordered list -->
+            <!-- <li>: list item -->
+            <!-- <dl>: description list -->
+            <!-- <dt>: description term -->
+            <!-- <dd>: description details -->
+            <ol>
+                <!-- <i lang="">: elemento idiomático que apenas lembra que o texto presente está em outro idioma -->
+                <li><p>A expressão <i>Quod Erat Demonstrandum</i> é bastante utilizada por matemáticos.</p></li>
+                <!-- <em>: dá ênfase à um texto (itálico) -->
+                <li><p>A visão de mundo aumenta quando se <em>entende</em> algo.</p></li>
+                <!-- <b>: "bring attencion to" apresenta o conteúdo em negrito sem aprensentar importância -->
+                <!-- <strong>: marca com negrito um texto importante -->
+                <li><p>De <b>R$60,00</b> por <strong>R$50,00</strong>!!!</p></li>
+                <!-- <q>: quotation, adiciona fonte nos bastidores de uma citação em linha -->
+                <li><p>As Quincy Larson said,<q cite="https://www.freecodecamp.org/news/learn-to-code-book/">Momentum is everything.</q></p></li>
+                <!-- <abbr>: abreviação, pode adicionar legenda para explicação do significado -->
+                <li><p><abbr title="HyperText Markup Language">HTML</abbr> é essencial para desenvolvimento de sites.</p></li>
+            </ol>
+        </section>
+
         <section>
             <h2>Randons</h2>
             <p>uma cara feliz em svg</p>
