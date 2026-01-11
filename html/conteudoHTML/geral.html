@@ -35,7 +35,7 @@
 
         <section>
             <!-- <iframe>: o frame imbutido pode incorporar qualquer página html ao site inclusive, vídeos, mapas, ... -->
-            <h2>Iframe</h2>
+            <h2>Iframes</h2>
             <iframe width="300" height="200" src="https://www.youtube.com/embed/PkZNo7MFNFg?si=-UBVIUNM3csdeiWF" title="Learn JavaScript - Full Course for Beginners (YouTube video)" allowfullscreen></iframe>
             <iframe width="300" height="200" src="geral.html"></iframe>
         </section>
@@ -66,6 +66,69 @@
                 <!-- <abbr>: abreviação, pode adicionar legenda para explicação do significado -->
                 <li><p><abbr title="HyperText Markup Language">HTML</abbr> é essencial para desenvolvimento de sites.</p></li>
             </ol>
+        </section>
+
+        <section>
+            <h2>Formulários</h2>
+            <!-- <form>: elemento semântico p/ formulários -->
+            <form>
+                <!-- <label>: rótulo para inputs -->
+                <label>
+                    Email:
+                    <input minlength="5" maxlength="60" required type="email" placeholder="exemplo@gmail.com">
+                </label>
+                <label for="nome">Nome:</label>
+                <!-- Elementos input com o mesmo valor do atributo 'name' terão mesmo destino nos bastidores -->
+                <input type="text" id="nome" name="nome">
+                <!-- <button>: botão interativo que ativa algum evento -->
+                <!-- é necessário apenas um botão do tipo 'submit' para cada formulário -->
+                <button type="submit">Entrar</button>
+                <button type="reset">Reiniciar</button>
+            </form>
+            <!-- <fieldset>: conjunto de inputs com um mesmo destino nos bastidores -->
+            <fieldset>
+                <!-- <legend>: legenda so conjunto de dados -->
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome (obrigatório):</label>
+                <input required type="text" id="nome" name="nome">
+                <label for="email">Email (obrigatório):</label>
+                <input required type="email" id="email" name="email" placeholder="email@gmail.com">
+                <label for="idade">Idade (opcional):</label>
+                <input type="number" id="idade" name="idade" min="3" max="100">
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Tabelas</h2>
+            <!-- <table>: cria uma tabela simples -->
+            <table>
+                <!-- <thead>: cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>Título da tabela</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>: corpo da tabela -->
+                <tbody>
+                    <!-- <tr>: table row, linha da tabela ou linha de informação -->
+                    <tr>
+                        <!-- <th>: table heading, nome da informação -->
+                        <th>Primeira linha</th>
+                        <!-- <td>: table data, informação da tabela -->
+                        <td>Primeiro dado</td>
+                    </tr>
+                    <tr>
+                        <th>Segunda linha</th>
+                        <td>Segundo dado</td>
+                    </tr>
+                </tbody>
+                <!-- <tfoot>: rodapé da tabela -->
+                <tfoot>
+                    <tr>
+                        <th>Conteúdo adicional como fonte, data e autor</th>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
 
         <section>
