@@ -71,7 +71,8 @@
         <section>
             <h2>Formulários</h2>
             <!-- <form>: elemento semântico p/ formulários -->
-            <form>
+            <!-- o atributo action diz para onde devem ir os dados do formulário -->
+            <form action="">
                 <!-- <label>: rótulo para inputs -->
                 <label>
                     Email:
@@ -79,7 +80,7 @@
                 </label>
                 <label for="nome">Nome:</label>
                 <!-- Elementos input com o mesmo valor do atributo 'name' terão mesmo destino nos bastidores -->
-                <input type="text" id="nome" name="nome">
+                <input type="text" id="name" name="name" value="MEUNOME">
                 <!-- <button>: botão interativo que ativa algum evento -->
                 <!-- é necessário apenas um botão do tipo 'submit' para cada formulário -->
                 <button type="submit">Entrar</button>
@@ -89,7 +90,7 @@
             <fieldset>
                 <!-- <legend>: legenda so conjunto de dados -->
                 <legend>Dados Pessoais</legend>
-                <label for="name">Nome (obrigatório):</label>
+                <label for="nome">Nome (obrigatório):</label>
                 <input required type="text" id="nome" name="nome">
                 <label for="email">Email (obrigatório):</label>
                 <input required type="email" id="email" name="email" placeholder="email@gmail.com">
@@ -102,32 +103,63 @@
             <h2>Tabelas</h2>
             <!-- <table>: cria uma tabela simples -->
             <table>
+                <caption>Título da Tabela</caption>
                 <!-- <thead>: cabeçalho da tabela -->
                 <thead>
+                    <!-- <tr>: table row, linha da tabela ou linha de informação -->
                     <tr>
-                        <th>Título da tabela</th>
+                        <!-- <th>: table header, nome da informação -->
+                        <th>Nome do primeiro dado</th>
+                        <th>Nome do segundo dado</th>
                     </tr>
                 </thead>
                 <!-- <tbody>: corpo da tabela -->
                 <tbody>
-                    <!-- <tr>: table row, linha da tabela ou linha de informação -->
                     <tr>
-                        <!-- <th>: table heading, nome da informação -->
-                        <th>Primeira linha</th>
                         <!-- <td>: table data, informação da tabela -->
-                        <td>Primeiro dado</td>
+                        <td>Primeiro dado da primeira linha</td>
+                        <td>Segundo dado da primeira linha</td>
                     </tr>
                     <tr>
-                        <th>Segunda linha</th>
-                        <td>Segundo dado</td>
+                        <td>Primeiro dado da segunda linha</td>
+                        <td>Segundo dado da segunda linha</td>
                     </tr>
                 </tbody>
                 <!-- <tfoot>: rodapé da tabela -->
                 <tfoot>
                     <tr>
-                        <th>Conteúdo adicional como fonte, data e autor</th>
+                        <!-- atributo colspan diz quantas colunas o elemento td deve abranger -->
+                        <td colspan="2">Conteúdo adicional como fonte, data e autor</td>
                     </tr>
                 </tfoot>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <!-- o atrbuto scope de <th> diz a qual referência o conteúdo de <th> é título -->
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="row">Dogs</th>
+                        <th scope="row">Nora</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gino</th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" scope="row">Cats</th>
+                        <th scope="row">Lulu</th>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Elizabeth</th>
+                        <td>6</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
