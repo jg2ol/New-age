@@ -71,7 +71,7 @@
         <section>
             <h2>Formulários</h2>
             <!-- <form>: elemento semântico p/ formulários -->
-            <!-- o atributo action diz para onde devem ir os dados do formulário -->
+            <!-- o atributo action é um url que diz para onde devem ir os dados do formulário -->
             <form action="">
                 <!-- <label>: rótulo para inputs -->
                 <label>
@@ -88,12 +88,15 @@
             </form>
             <!-- <fieldset>: conjunto de inputs com um mesmo destino nos bastidores -->
             <fieldset>
-                <!-- <legend>: legenda so conjunto de dados -->
+                <!-- <legend>: legenda do conjunto de dados -->
                 <legend>Dados Pessoais</legend>
+                
                 <label for="nome">Nome (obrigatório):</label>
                 <input required type="text" id="nome" name="nome">
+                
                 <label for="email">Email (obrigatório):</label>
                 <input required type="email" id="email" name="email" placeholder="email@gmail.com">
+                
                 <label for="idade">Idade (opcional):</label>
                 <input type="number" id="idade" name="idade" min="3" max="100">
             </fieldset>
@@ -178,6 +181,18 @@
                   fill="red"
                 ></path>
               </svg>
+
+              <div>
+                <span id="volume-label">Volume</span>
+                <span id="volume-details">Adjust the volume level</span>
+                <!-- atributos ARIA servem p/ acessibilidade p/ usuários de leitores de tela -->
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="30"
+                  aria-labelledby="volume-label volume-details">
+              </div>
         </section>
     </body>
 </html>

@@ -28,7 +28,7 @@ var p_cont = document.getElementById("conteudo")
 var p2 = document.getElementsByTagName('p')[1]
 var p3 = document.getElementsByTagName('p')[2]
 
-p2.innerText = `No primeiro parpagrafo está escrito: "${p_cont.innerText}"`
+p2.innerText = `No primeiro parágrafo está escrito: "${p_cont.innerText}"`
 // também podemos editar os estilos dos elementos via DOM
 p2.style.marginBottom = 0
 p3.innerText = `Com tags: "${p_cont.innerHTML}"`

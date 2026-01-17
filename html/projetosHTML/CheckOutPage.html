@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="cubo mágico 3x3x3 embaralhado">
+    </section>
+    
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <label for="card-name"><span aria-hidden="true">*</span>Nome:</label>
+            <input type="text" id="card-name" name="card-name" required>
+            
+            <label for="card-number"><span aria-hidden="true">*</span>Nº do cartão:</label>
+            <input type="text" id="card-number" name="card-number" required aria-describedby="card-number-help">
+            <p id="card-number-help">Informe os 16 dígitos do seu cartão sem espaços, pontos ou traços.</p>
+        </form>
+    </section>
+</body>
+
+</html>
