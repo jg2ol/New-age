@@ -1,0 +1,30 @@
+*{margin: 0; padding: 0; border: 0;}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid lightblue;
+}
+
+#cronometro {text-align: center;}
+#control_time {
+    display: flex;
+    justify-content: center;
+}
+#config {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    color: white;
+}
+#config .btn {width: 150px;}
+.btn {
+    background: lightgray;
+    border: 1px solid black;
+    width: 100px; height: 20px;
+    cursor: pointer;
+}
+.adicionar:hover {background: limegreen;}
+.retirar:hover {background: tomato;}
+.back_green {background: green;}
+.back_red {background: red;}
+.opac:hover {opacity: 0.9;}

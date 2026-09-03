@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cronômetro simples feito com HTML, CSS e JavaScript</h1>
+        <h2>By: João Gabriel</h2>
+        <h3>Possíveis atualizações virão.</h3>
+    </header>
+    <section id="cronometro">
+        <h2>60 seg</h2>
+        <h3>Configure o tempo:</h3>
+        <div id="config">
+            <div class="btn back_green opac" onclick="start_cron()">Ativar Cronômetro</div>
+            <div class="btn back_red opac" onclick="end_cron()">Parar Cronômetro</div>
+        </div>
+        <div id="control_time">
+            <div class="btn adicionar" id="30">+30 seg</div>
+            <div class="btn adicionar" id="10">+10 seg</div>
+            <div class="btn adicionar" id="1">+1 seg</div>
+            <div class="btn retirar" id="-1">-1 seg</div>
+            <div class="btn retirar" id="-10">-10 seg</div>
+            <div class="btn retirar" id="-30">-30 seg</div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
